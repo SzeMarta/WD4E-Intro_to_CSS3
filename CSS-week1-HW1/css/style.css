@@ -9,8 +9,16 @@ header {
 }
 
 nav {
+  display: inline-block;
+  width: 80%
   background-color: aliceblue;
   font-size: 120%;
+}
+
+nav img {
+    width: 10%;
+    position: relative;
+    top: 20px;
 }
 
 main {
@@ -23,6 +31,7 @@ footer {
   font-style: italic;
 }
 
+/*
 li{
   display: inline-block;
   width: 20%;
@@ -31,6 +40,24 @@ li{
   background-color:lavender;
   line-height: 80px;
 }
+  */
+
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
 h1 {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
